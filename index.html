@@ -9,22 +9,25 @@
 </head>
 <body>
     <header class="header">
-        <h1>AdLer Icon Repository</h1>
-        <p>Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.</p>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('de')" class="lang-btn active" id="lang-de">DE</button>
+            <button onclick="switchLanguage('en')" class="lang-btn" id="lang-en">EN</button>
+        </div>
+        <h1 data-translate="title">AdLer Icon Repository</h1>
+        <p data-translate="subtitle">Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.</p>
     </header>
 
     <div class="container">
         <div class="icon-grid">
-            <!-- Beispiel Icon Cards - Diese durch deine tatsächlichen Icons ersetzen -->
             <div class="icon-card">
                 <div class="icon-preview">
                     <svg viewBox="0 0 24 24">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Star Icon</h3>
-                <p class="icon-description">Perfekt für Bewertungen und Favoriten</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('star.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="star_title">Star Icon</h3>
+                <p class="icon-description" data-translate="star_desc">Perfekt für Bewertungen und Favoriten</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('star.svg')" data-translate="download_btn">Download SVG</a>
             </div>
 
             <div class="icon-card">
@@ -33,9 +36,9 @@
                         <path d="M20 6L9 17l-5-5"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Check Icon</h3>
-                <p class="icon-description">Für Erfolg und Bestätigung</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('check.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="check_title">Check Icon</h3>
+                <p class="icon-description" data-translate="check_desc">Für Erfolg und Bestätigung</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('check.svg')" data-translate="download_btn">Download SVG</a>
             </div>
 
             <div class="icon-card">
@@ -45,9 +48,9 @@
                         <path d="m21 21-4.35-4.35"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Search Icon</h3>
-                <p class="icon-description">Für Suchfunktionen und Filter</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('search.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="search_title">Search Icon</h3>
+                <p class="icon-description" data-translate="search_desc">Für Suchfunktionen und Filter</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('search.svg')" data-translate="download_btn">Download SVG</a>
             </div>
 
             <div class="icon-card">
@@ -56,9 +59,9 @@
                         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Message Icon</h3>
-                <p class="icon-description">Für Chat und Kommunikation</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('message.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="message_title">Message Icon</h3>
+                <p class="icon-description" data-translate="message_desc">Für Chat und Kommunikation</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('message.svg')" data-translate="download_btn">Download SVG</a>
             </div>
 
             <div class="icon-card">
@@ -67,9 +70,9 @@
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Bookmark Icon</h3>
-                <p class="icon-description">Für Lesezeichen und Sammlungen</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('bookmark.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="bookmark_title">Bookmark Icon</h3>
+                <p class="icon-description" data-translate="bookmark_desc">Für Lesezeichen und Sammlungen</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('bookmark.svg')" data-translate="download_btn">Download SVG</a>
             </div>
 
             <div class="icon-card">
@@ -78,24 +81,89 @@
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
                     </svg>
                 </div>
-                <h3 class="icon-name">Heart Icon</h3>
-                <p class="icon-description">Für Likes und Favoriten</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('heart.svg')">Download SVG</a>
+                <h3 class="icon-name" data-translate="heart_title">Heart Icon</h3>
+                <p class="icon-description" data-translate="heart_desc">Für Likes und Favoriten</p>
+                <a href="#" class="download-btn" onclick="downloadIcon('heart.svg')" data-translate="download_btn">Download SVG</a>
             </div>
         </div>
     </div>
 
     <script>
-        function downloadIcon(filename) {
-            // Hier würdest du die tatsächliche Download-Logik implementieren
-            // Zum Beispiel:
-            // const link = document.createElement('a');
-            // link.href = 'path/to/icons/' + filename;
-            // link.download = filename;
-            // link.click();
+        // Übersetzungen
+        const translations = {
+            de: {
+                title: "AdLer Icon Repository",
+                subtitle: "Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.",
+                star_title: "Star Icon",
+                star_desc: "Perfekt für Bewertungen und Favoriten",
+                check_title: "Check Icon",
+                check_desc: "Für Erfolg und Bestätigung",
+                search_title: "Search Icon",
+                search_desc: "Für Suchfunktionen und Filter",
+                message_title: "Message Icon",
+                message_desc: "Für Chat und Kommunikation",
+                bookmark_title: "Bookmark Icon",
+                bookmark_desc: "Für Lesezeichen und Sammlungen",
+                heart_title: "Heart Icon",
+                heart_desc: "Für Likes und Favoriten",
+                download_btn: "Download SVG"
+            },
+            en: {
+                title: "AdLer Icon Repository",
+                subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print.",
+                star_title: "Star Icon",
+                star_desc: "Perfect for ratings and favorites",
+                check_title: "Check Icon",
+                check_desc: "For success and confirmation",
+                search_title: "Search Icon",
+                search_desc: "For search functions and filters",
+                message_title: "Message Icon",
+                message_desc: "For chat and communication",
+                bookmark_title: "Bookmark Icon",
+                bookmark_desc: "For bookmarks and collections",
+                heart_title: "Heart Icon",
+                heart_desc: "For likes and favorites",
+                download_btn: "Download SVG"
+            }
+        };
+
+        let currentLanguage = 'de';
+
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            document.documentElement.lang = lang;
             
-            alert('Download für ' + filename + ' würde hier starten');
+            // Buttons aktualisieren
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang-${lang}`).classList.add('active');
+            
+            // Texte übersetzen
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Sprache in localStorage speichern
+            localStorage.setItem('language', lang);
         }
+
+        function downloadIcon(filename) {
+            const downloadText = currentLanguage === 'de' ? 'Download für' : 'Download for';
+            const startText = currentLanguage === 'de' ? 'würde hier starten' : 'would start here';
+            alert(`${downloadText} ${filename} ${startText}`);
+        }
+
+        // Gespeicherte Sprache laden
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('language') || 'de';
+            if (savedLanguage !== 'de') {
+                switchLanguage(savedLanguage);
+            }
+        });
     </script>
 </body>
 </html>
