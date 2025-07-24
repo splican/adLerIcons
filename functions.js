@@ -1,6 +1,6 @@
 let currentLanguage = 'de';
 
-        // SVG als Data URL laden (komplett isoliert)
+        // SVG als Data URL laden - BESTE LÖSUNG (ohne Base64)
         async function loadSVGAsDataURL(filename) {
             try {
                 const response = await fetch(`icons/${filename}`);
@@ -9,12 +9,12 @@ let currentLanguage = 'de';
                 }
                 const svgText = await response.text();
                 
-                // SVG als Data URL encodieren
-                const encoded = btoa(unescape(encodeURIComponent(svgText)));
-                return `data:image/svg+xml;base64,${encoded}`;
+                // Direkt als URL-encoded SVG (moderner und effizienter)
+                const encoded = encodeURIComponent(svgText);
+                return `data:image/svg+xml,${encoded}`;
             } catch (error) {
                 console.warn(`Fehler beim Laden von ${filename}:`, error);
-                return 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PC9zdmc+';
+                return 'data:image/svg+xml,%3Csvg viewBox="0 0 24 24"%3E%3Ccircle cx="12" cy="12" r="10"/%3E%3C/svg%3E';
             }
         }
 
@@ -258,24 +258,9 @@ let currentLanguage = 'de';
         }
 
         // Einzelnes Icon herunterladen
-        async function downloadIcon(filename) {
-            try {
-                const response = await fetch(`icons/${filename}`);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                
-                const blob = await response.blob();
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = filename;
-                a.click();
-                URL.revokeObjectURL(url);
-            } catch (error) {
-                console.error('Download-Fehler:', error);
-                alert('Fehler beim Download der Datei');
-            }
+        async function downloadSingleIcon(filename) {
+            // Vermeide Duplizierung, indem die bestehende Funktion verwendet wird
+            await downloadIcon(filename);
         }
 
         // Icon-Anzahl aktualisieren
