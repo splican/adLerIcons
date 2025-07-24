@@ -3,7 +3,7 @@ let currentLanguage = 'de';
         // SVG als Data URL laden (komplett isoliert)
         async function loadSVGAsDataURL(filename) {
             try {
-                const response = await fetch(`assets/${filename}`);
+                const response = await fetch(`icons/${filename}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -81,7 +81,7 @@ let currentLanguage = 'de';
 
         async function downloadIcon(filename) {
             try {
-                const response = await fetch(`assets/${filename}`);
+                const response = await fetch(`icons/${filename}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -187,7 +187,7 @@ let currentLanguage = 'de';
                 
                 for (const icon of iconDatabase) {
                     try {
-                        const response = await fetch(`assets/${icon.filename}`);
+                        const response = await fetch(`icons/${icon.filename}`);
                         if (response.ok) {
                             const svgContent = await response.text();
                             iconFolder.file(icon.filename, svgContent);
