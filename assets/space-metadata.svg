@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <g id="uuid-556b7a5d-a708-49df-bdd1-9e17385a5163" data-name="R-Lernraum">
+    <g>
+      <polygon points="152 1409.6 956.37 945.2 1760.73 1409.6 956.37 1874 152 1409.6" style="fill: #2e3a4d; fill-rule: evenodd; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 60px;"/>
+      <path d="M977.38,899.86c-4.98-2.88-11.13-2.88-16.12,0L64.03,1417.89c-4.99,2.88-8.07,8.21-8.07,13.97,0,5.76,3.08,11.09,8.08,13.98l897.23,518.02c4.98,2.88,11.13,2.88,16.12,0l897.23-518.02c4.99-2.88,8.07-8.21,8.08-13.97,0-5.77-3.08-11.09-8.06-13.97l-897.24-518.02ZM969.32,932.46l864.97,499.39-864.97,499.39L104.35,1431.85l864.97-499.39h0Z" style="fill: #08234d; fill-rule: evenodd; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 60px;"/>
+      <g>
+        <polygon points="999.57 29.72 1926.51 564.89 1926.51 1434.54 999.57 899.37 999.57 29.72" style="fill: #172d4d; fill-rule: evenodd;"/>
+        <path d="M1901,574.54c0-5.76-3.08-11.1-8.07-13.98L995.11,42.21c-4.99-2.88-11.15-2.88-16.14,0-4.99,2.88-8.07,8.21-8.07,13.98v842.32c0,5.77,3.08,11.1,8.07,13.98l897.81,518.35c4.99,2.88,11.15,2.89,16.14,0,4.99-2.88,8.07-8.21,8.07-13.98v-842.32ZM1868.71,583.87v805.04s-777.55-448.92-865.53-499.71V84.15l865.53,499.71h0Z" style="fill: #172d4d; fill-rule: evenodd; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 60px;"/>
+      </g>
+      <g>
+        <polygon points="140 594.38 937 138 937 879.62 140 1336 140 594.38" style="fill: #2e3a4d; fill-rule: evenodd; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 60px;"/>
+        <path d="M991.23,59.27c0-5.82-3.1-11.19-8.13-14.09-5.03-2.9-11.24-2.91-16.27,0L61.9,567.64c-5.03,2.91-8.13,8.28-8.13,14.09v849c0,5.82,3.1,11.19,8.13,14.09,5.03,2.91,11.24,2.91,16.27,0l904.93-522.46c5.03-2.91,8.13-8.27,8.13-14.09V59.27ZM958.69,87.45v811.42L86.3,1402.54v-811.42L958.69,87.45h0Z" style="fill: #172d4d; fill-rule: evenodd; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 60px;"/>
+      </g>
+    </g>
+    <polygon points="978 -.99 18 554.04 18 1455.97 978.01 2011 1938 1455.96 1938 554.04 978 -.99" style="fill: #d0d8e5; fill-rule: evenodd; opacity: .5;"/>
+  </g>
+  <g id="uuid-725af08d-aa20-4287-881c-eebb21e3f754" data-name="R-Metadaten">
+    <rect x="1014.95" y="67.66" width="915" height="1356" rx="137.35" ry="137.35" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1164.95" y1="296.66" x2="1496.95" y2="296.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1449.95" y1="651.66" x2="1781.95" y2="651.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1164.95" y1="1221.66" x2="1496.95" y2="1221.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1664.95" y1="1214" x2="1773.5" y2="1214" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1675.22" y1="297" x2="1783.78" y2="297" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1173.22" y1="652" x2="1281.78" y2="652" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1164.95" y1="473.66" x2="1781.95" y2="473.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1164.95" y1="827.66" x2="1781.95" y2="827.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1164.95" y1="1035.66" x2="1388.95" y2="1035.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1553.95" y1="1035.66" x2="1773.95" y2="1035.66" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 2000">
+  <defs>
+    <clipPath id="uuid-ef060688-f999-4584-af5c-361df4ac9dda">
+      <rect x="17.12" y="16.79" width="1967.43" height="1967.43" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g id="uuid-b8fb652b-edf9-4383-b9e4-61a3efaf715f" data-name="R-Lernwelt">
+    <rect id="uuid-c35ce926-9a14-4a8f-9574-328de8eb374a" data-name="lernwelt-icon" x=".29" y="-13.57" width="2000" height="2000" style="fill: none;"/>
+    <g style="clip-path: url(#uuid-ef060688-f999-4584-af5c-361df4ac9dda);">
+      <g>
+        <ellipse cx="1000.83" cy="1000.51" rx="967.59" ry="983.72" style="fill: #172d4d;"/>
+        <path d="M1509.41,694.57l-170.25,30-114.04,115.59-63.94,176.74,55.09,67.22s91.92,75.44,122.9,95.42c30.99,19.98,150.58,15.74,150.58,15.74l73.78-43.28,111.16,61.97s36.88,113.45-4.92,147.56c-41.8,34.11-146.57,130.83-146.57,130.83,0,0-84.83,111.84-93.45,129.85-8.63,18.01-27.59,122.5-23.61,139.69,3.98,17.19,130.83,39.35,130.83,39.35l196.74-181,196.74-343.81,37.98-288.72-43.88-263.14-155.43-80.17-113.13,60.99-131.82-10.82" style="fill: #e9f2fa; fill-rule: evenodd; stroke: #e9f2fa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 33.33px;"/>
+        <path d="M400.77,823.44l-31.48-74.76-45.25-53.12,20.66-109.19,173.13-61.32,86.57-32.79,109.19-88.86,53.12-70.83,85.58-32.46,78.7,6.89,1.97-118.05-106.24-26.56-59.02-3.93-116.08-28.53-27.54-18.69-47.71,24.59-138.21,90.5-93.45,77.71-88.53,86.57-62.96,101.65-33.12,71.48-37.71,54.1,110.18-21.64,23.61,48.2,22.63,59.02,65.91,80.66v73.78l40.33,46.23,25.58,13.77-9.84-94.44Z" style="fill: #e9f2fa; fill-rule: evenodd; stroke: #e9f2fa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 33.33px;"/>
+        <path d="M1418.91,569.64l-18.69,56.07-86.57,15.74-46.23-57.06,94.44-59.35,9.84-32.79.98-37.71,2.95-64.93-10.82-70.83,107.22,15.74,32.46-25.58,21.64-33.45s16.85-14.62,0-19.67-30.23-16.21-60.01-4.92c-29.78,11.29-35.41,15.74-35.41,15.74l-40.33,26.56-37.38-46.23,37.38-31.48,43.28-22.63,48.2-31.48,158.38,118.05,61.97,74.76,59.02,61.97,60.99,76.07h-51.15l-76.73-16.07-38.36-32.46-52.14,4.92s6.39,9,15.74,23.61c9.35,14.61,36.4,36.4,36.4,36.4v16.4h26.56l-48.2,24.92s-.14,7.91-16.72,10.82c-16.59,2.91-23.61-18.69-23.61-18.69l-.98-27.54-15.74-22.3-17.71-24.92-36.4,24.92h-34.43l-2.95,32.79-47.22,36.72-19.67,7.87Z" style="fill: #e9f2fa; fill-rule: evenodd; stroke: #e9f2fa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 33.33px;"/>
+        <path d="M984.11,137.79l66.89,45.25,49.19,1.97,82.63-9.84,7.87-26.56.98-42.3-38.36-35.41-38.36-21.64h-92.47l-94.44-1.97-7.87,36.4,63.94,54.1Z" style="fill: #e9f2fa; fill-rule: evenodd; stroke: #e9f2fa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 33.33px;"/>
+        <path d="M891.64,1276.44l-182.97-143.13-36.4-189.86-327.58.98-88.53,242.98,249.86,321.35,127.88,359.38,262.65-359.38-4.92-232.32" style="fill: #e9f2fa; fill-rule: evenodd; stroke: #e9f2fa; stroke-linecap: round; stroke-linejoin: round; stroke-width: 33.33px;"/>
+        <path d="M1000.84,16.79C457.91,16.79,17.12,457.58,17.12,1000.51s440.79,983.71,983.71,983.71,983.71-440.79,983.71-983.71S1543.76,16.79,1000.84,16.79ZM1000.84,87.58c503.86,0,912.92,409.07,912.92,912.93s-409.07,912.92-912.92,912.92S87.91,1504.36,87.91,1000.51,496.98,87.58,1000.84,87.58Z" style="fill: #172b4d; fill-rule: evenodd;"/>
+      </g>
+    </g>
+  </g>
+  <g id="uuid-1090b76e-c01d-4a55-ac65-93d1eceb434f" data-name="R-Metadata">
+    <rect x="1001.86" y="80.34" width="915" height="1356" rx="137.35" ry="137.35" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1151.86" y1="309.34" x2="1483.86" y2="309.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1436.86" y1="664.34" x2="1768.86" y2="664.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1151.86" y1="1234.34" x2="1483.86" y2="1234.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1651.86" y1="1226.68" x2="1760.41" y2="1226.68" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1662.13" y1="309.68" x2="1770.69" y2="309.68" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1160.13" y1="664.68" x2="1268.69" y2="664.68" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1151.86" y1="486.34" x2="1768.86" y2="486.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1151.86" y1="840.34" x2="1768.86" y2="840.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1151.86" y1="1048.34" x2="1375.86" y2="1048.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1540.86" y1="1048.34" x2="1760.86" y2="1048.34" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+  </g>
+</svg>

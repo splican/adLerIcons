@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ConditionRight" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #172d4d;
+        stroke-linecap: round;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+        stroke-width: 46px;
+      }
+
+      .cls-2 {
+        fill: #172d4d;
+        stroke-width: 24px;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 0 0 90 120;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="932.64" y="77.27" width="997" height="1001" rx="71.48" ry="71.48"/>
+  <rect class="cls-1" x="492.14" y="649.77" width="997" height="1001" rx="71.48" ry="71.48"/>
+  <polygon class="cls-2" points="1179.14 1290.77 1699.04 1290.77 1562.49 1434.39 1771.91 1643.8 1524.93 1890.78 1315.51 1681.36 1179.14 1810.66 1179.14 1290.77"/>
+  <line class="cls-1" x1="420.14" y1="1593.77" x2="52.14" y2="1879.77"/>
+  <line class="cls-1" x1="469.29" y1="1713.77" x2="172.93" y2="1944.09"/>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <g id="uuid-212f976e-5057-4b10-ba50-7a054bdb660d" data-name="_x32_-Elements">
+    <g>
+      <polygon points="156.74 1855.27 158.65 1838.78 343.22 247.37 1181.36 886.6 1837.16 1163.21 156.74 1855.27" style="fill: #363f4d; fill-rule: evenodd;"/>
+      <g>
+        <polyline points="167.84 1850.7 156.74 1855.27 158.12 1843.35" style="fill: none; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+        <line x1="161.58" y1="1813.57" x2="340.12" y2="274.18" style="fill: none; stroke: #e9f2fa; stroke-dasharray: 23.98 29.98; stroke-miterlimit: 10; stroke-width: 30px;"/>
+        <polyline points="341.84 259.29 343.22 247.37 352.77 254.65" style="fill: none; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+        <polyline points="376.4 272.68 1181.36 886.6 1812.41 1152.77" style="fill: none; stroke: #e9f2fa; stroke-dasharray: 23.78 29.72; stroke-miterlimit: 10; stroke-width: 30px;"/>
+        <polyline points="1826.1 1158.55 1837.16 1163.21 1826.06 1167.78" style="fill: none; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+        <line x1="1798.61" y1="1179.09" x2="181.56" y2="1845.05" style="fill: none; stroke: #e9f2fa; stroke-dasharray: 23.75 29.69; stroke-miterlimit: 10; stroke-width: 30px;"/>
+      </g>
+    </g>
+    <polygon points="1617.52 129.27 343.22 247.37 347.05 250.61 1181.36 886.6 1837.16 1163.21 1617.52 129.27" style="fill: #363f4d; fill-rule: evenodd; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <ellipse cx="1818.31" cy="1162.9" rx="173.69" ry="163.82" style="fill: #172d4d; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <polyline points="1664.14 149.99 1181.36 886.6 156.74 1855.27" style="fill: none; fill-rule: evenodd; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <ellipse cx="193.69" cy="1829.22" rx="173.69" ry="163.82" style="fill: #172d4d; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <ellipse cx="398.89" cy="259.55" rx="173.69" ry="163.82" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <ellipse cx="1673.19" cy="174.6" rx="173.69" ry="163.82" style="fill: #172d4d; stroke: #e9f2fa; stroke-miterlimit: 10; stroke-width: 30px;"/>
+    <ellipse cx="1157.44" cy="889.64" rx="173.69" ry="163.82" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 30px;"/>
+  </g>
+  <g id="uuid-650c0c75-0ae6-4a1a-9003-b2ca37bf76f4" data-name="_x32_-Schrift">
+    <path d="M1566.12,1657.76h-516.91l-108.15,309.94h-241.05l504.08-1333.9h208.06l504.99,1333.9h-241.96l-109.05-309.94ZM1114.26,1470.93h386.77l-193.37-554.05-193.4,554.05Z" style="fill: #172d4d;"/>
+    <path d="M1638.11,1614.12h-516.91l-108.15,309.94h-241.05l504.08-1333.9h208.06l504.99,1333.9h-241.96l-109.05-309.94ZM1186.26,1427.29h386.77l-193.37-554.05-193.4,554.05Z" style="fill: #e5bd73;"/>
+  </g>
+</svg>

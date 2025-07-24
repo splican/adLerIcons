@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <g id="uuid-58c73294-b6c8-4e63-81c7-5c3f104c41f0" data-name="R-File_Back">
+    <polygon points="36.53 1958 36.53 738.32 309.44 738 418.62 960.8 1576.39 960.53 1589 1958 36.53 1958" style="fill: #172d4d; fill-rule: evenodd;"/>
+  </g>
+  <g id="uuid-e5fee6e8-a59d-4d72-8816-301bfea3f822" data-name="R-Metadata_Back">
+    <rect x="443.49" y="60.4" width="915" height="1356" rx="137.35" ry="137.35" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="593.49" y1="289.4" x2="925.49" y2="289.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="878.49" y1="644.4" x2="1210.49" y2="644.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="593.49" y1="1214.4" x2="925.49" y2="1214.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1093.49" y1="1206.74" x2="1202.05" y2="1206.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1103.77" y1="289.74" x2="1212.32" y2="289.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="601.77" y1="644.74" x2="710.32" y2="644.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="593.49" y1="466.4" x2="1210.49" y2="466.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="593.49" y1="820.4" x2="1210.49" y2="820.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="593.49" y1="1028.4" x2="817.49" y2="1028.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="982.49" y1="1028.4" x2="1202.49" y2="1028.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+  </g>
+  <g id="uuid-449b1d8f-61d8-42e4-a3e3-9f042a1ed0bb" data-name="R-Metadata_Front">
+    <rect x="752.49" y="408.4" width="915" height="1356" rx="137.35" ry="137.35" style="fill: #e9f2fa; stroke: #172d4d; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="902.49" y1="637.4" x2="1234.49" y2="637.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1187.49" y1="992.4" x2="1519.49" y2="992.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="902.49" y1="1562.4" x2="1234.49" y2="1562.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1402.49" y1="1554.74" x2="1511.05" y2="1554.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1412.77" y1="637.74" x2="1521.32" y2="637.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="910.77" y1="992.74" x2="1019.32" y2="992.74" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="902.49" y1="814.4" x2="1519.49" y2="814.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="902.49" y1="1168.4" x2="1519.49" y2="1168.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="902.49" y1="1376.4" x2="1126.49" y2="1376.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+    <line x1="1291.49" y1="1376.4" x2="1511.49" y2="1376.4" style="fill: none; stroke: #172d4d; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 70px;"/>
+  </g>
+  <g id="uuid-78b2ec3d-4e52-48e3-a2e2-fcb54ba09758" data-name="R-File_Front">
+    <polygon points="94 1955 1592.72 1955 1975 953.21 474.86 953.21 94 1955" style="fill: #363f4d; fill-rule: evenodd;"/>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .5;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #cfd8e5;
+        fill-rule: evenodd;
+        stroke: #172d4d;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 58.52px;
+      }
+
+      .cls-3 {
+        fill: #172d4d;
+        font-family: Roboto-Black, Roboto;
+        font-size: 465.6px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <rect id="feedback-icon" class="cls-4" width="2000" height="2000"/>
+  <g id="feedback-icon1">
+    <g class="cls-1">
+      <path class="cls-5" d="m1422.51,1639.32c-128.17,52.85-272.67,82.57-425.53,82.57-526.52,0-953.99-352.7-953.99-787.12S470.47,147.65,996.99,147.65s953.99,352.7,953.99,787.12c0,176.59-70.63,339.67-189.85,471.07,115.66,279.32,202.88,439.56,202.88,439.56,0,0-339.58-3.32-541.49-206.08Z"/>
+    </g>
+    <g class="cls-2">
+      <text class="cls-3" transform="translate(-18 1136.07)"><tspan x="0" y="0">F</tspan></text>
+      <text class="cls-3" transform="translate(229.06 1136.07)"><tspan x="0" y="0">e</tspan></text>
+      <text class="cls-3" transform="translate(479.75 1136.07)"><tspan x="0" y="0">e</tspan></text>
+      <text class="cls-3" transform="translate(730.45 1136.07)"><tspan x="0" y="0">d</tspan></text>
+      <text class="cls-3" transform="translate(989.56 1136.07)"><tspan x="0" y="0">b</tspan></text>
+      <text class="cls-3" transform="translate(1248.89 1136.07)"><tspan x="0" y="0">a</tspan></text>
+      <text class="cls-3" transform="translate(1493.23 1136.07)"><tspan x="0" y="0">c</tspan></text>
+      <text class="cls-3" transform="translate(1732.33 1136.07)"><tspan x="0" y="0">k</tspan></text>
+    </g>
+  </g>
+</svg>
