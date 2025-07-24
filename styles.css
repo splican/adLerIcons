@@ -233,7 +233,7 @@ body {
 }
 
 .download-selected-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #172d4d;
     color: white;
     border: none;
     padding: 1rem 2rem;
