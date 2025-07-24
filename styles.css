@@ -6,24 +6,40 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background: linear-gradient(135deg, #a1c8e5 0%, #e2eaf2 100%);
+    color: #172d4d;
+}
+
+.adlerlogo {
+    width: 150px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
 }
 
 .header {
     height: 20vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
     display: flex;
+    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
     position: relative;
+    max-width: 1200px;
 }
-.subtitle, .subtitletext {
-    text-align: left;
+
+.subtitle {
+    padding: 0 0 0.5rem 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
 }
 
 .header h1 {
@@ -43,8 +59,8 @@ body {
     text-align: center;
     margin: 2rem 0;
     padding: 1rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 12px;
+    background: white;
+    border-radius: 15px;
 }
 
 .download-all-btn {
@@ -191,6 +207,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #333;
+    height: clamp(4rem, 4rem, 5rem);
 }
 
 .icon-description {
@@ -198,6 +215,9 @@ body {
     color: #666;
     margin-bottom: 1rem;
     line-height: 1.4;
+    height: clamp(4rem, 4rem, 6rem);
+    overflow: auto;
+    text-overflow: ellipsis;
 }
 
 .download-buttons-section {
@@ -208,7 +228,7 @@ body {
     flex-wrap: wrap;
     margin: 2rem 0;
     padding: 1rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: white;
     border-radius: 12px;
 }
 
@@ -290,15 +310,16 @@ body {
     top: 1rem;
     right: 2rem;
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
 .lang-btn {
-    background: rgba(255, 255, 255, 0.2);
+    background: #e9d6b3;
     color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid #e9d6b3b3;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -311,13 +332,13 @@ body {
 
 .lang-btn.active {
     background: rgba(255, 255, 255, 0.9);
-    color: #667eea;
-    border-color: rgba(255, 255, 255, 0.9);
+    color: #172d4d;
+    border-color: #e9d6b3;
 }
 
 @media (max-width: 768px) {
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .header p {
@@ -328,14 +349,30 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 1.5rem;
     }
+
+    .icon-name {
+        font-size: 1rem;
+        height: clamp(2rem, 2rem, 3rem);
+    }
+
+    .icon-description {
+        font-size: 0.9rem;
+        height: clamp(3rem, 3rem, 4rem);
+    }
     
     .container {
         padding: 0 1rem;
+    }
+    .header-text {
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     .icon-grid {
         grid-template-columns: 1fr;
+    }
+    .header-text {
+    display: none;
     }
 }

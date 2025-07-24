@@ -1,38 +1,6 @@
 let currentLanguage = 'de';
 let selectedIcons = new Set(); // Set für ausgewählte Icons
 
-// Übersetzungen für alle Texte
-const translations = {
-    de: {
-        download_all: 'Alle Icons als ZIP herunterladen',
-        download_selected: 'Ausgewählte Icons herunterladen',
-        downloading: 'Lade Icons herunter...',
-        preparing: 'Bereite ZIP-Datei vor...',
-        complete: 'Download abgeschlossen!',
-        select_all: 'Alle auswählen',
-        deselect_all: 'Alle abwählen',
-        selected_count: 'ausgewählt',
-        of: 'von',
-        title: "AdLer Icon Repository",
-        subtitle: "Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.",
-        subtitletext: "Alle im Projekt entstandenen Icons werden hier zum kostenfreien Download angeboten. Alle Icons stehen unter der MIT-License und sind frei verfügbar und nutzbar."
-    },
-    en: {
-        download_all: 'Download All Icons as ZIP',
-        download_selected: 'Download Selected Icons',
-        downloading: 'Downloading icons...',
-        preparing: 'Preparing ZIP file...',
-        complete: 'Download complete!',
-        select_all: 'Select All',
-        deselect_all: 'Deselect All',
-        selected_count: 'selected',
-        of: 'of',
-        title: "AdLer Icon Repository",
-        subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print.",
-        subtitletext: "All icons created in the project are offered here for free download. All icons are under the MIT license and are freely available and usable."
-    }
-};
-
 // SVG als Data URL laden (ohne unescape)
 async function loadSVGAsDataURL(filename) {
     try {

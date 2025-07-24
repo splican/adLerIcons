@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- JSZip für ZIP-Download -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- Übersetzungen laden -->
+    <script src="translations.js"></script>
     <!-- Icon Database laden -->
     <script src="icon-database.js"></script>
     <!-- Restliche Funktionen laden -->
@@ -19,9 +21,14 @@
             <button onclick="switchLanguage('de')" class="lang-btn active" id="lang-de">DE</button>
             <button onclick="switchLanguage('en')" class="lang-btn" id="lang-en">EN</button>
         </div>
-        <h1 data-translate="title">AdLer Icon Repository</h1>
-        <p data-translate="subtitle" class="subtitle">Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.</p>
-        <p data-translate="subtitletext" class="subtitletext">Alle im Projekt entstandenen Icons werden hier zum kostenfreien Download angeboten. Alle Icons stehen unter der MIT-License und sind frei verfügbar und nutzbar.</p>
+        <section class="header-content">
+            <img src="website-assets/adler-logo-3d-min.png" alt="AdLer Logo" class="adlerlogo">
+            <div class="header-text">
+                <h1 data-translate="title">AdLer Icons</h1>
+                <p data-translate="subtitle" class="subtitle">Hochwertige SVG-Icons für deine Projekte.</p>
+                <p data-translate="subtitletext" class="subtitletext">Alle im Projekt entstandenen Icons werden hier zum kostenfreien Download angeboten. Alle Icons stehen unter der MIT-License und sind frei verfügbar und nutzbar.</p>
+            </div>
+        </section>
     </header>
 
     <div class="container">
