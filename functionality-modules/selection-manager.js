@@ -18,7 +18,9 @@ function toggleIconSelection(iconId, isSelected) {
 // Alle Icons auswählen
 function selectAllIcons() {
     selectedIcons.clear();
-    iconDatabase.forEach(icon => selectedIcons.add(icon.id));
+    if (typeof iconDatabase !== 'undefined') {
+        iconDatabase.forEach(icon => selectedIcons.add(icon.id));
+    }
     
     // Alle Checkboxen aktivieren
     document.querySelectorAll('.icon-checkbox input[type="checkbox"]').forEach(checkbox => {
@@ -53,12 +55,15 @@ function deselectAllIcons() {
 // Auswahl-Informationen aktualisieren
 function updateSelectionInfo() {
     const selectedCount = selectedIcons.size;
-    const totalCount = iconDatabase.length;
+    const totalCount = typeof iconDatabase !== 'undefined' ? iconDatabase.length : 0;
     
-    // Ausgewählte Anzahl aktualisieren
+    // Ausgewählte Anzahl aktualisieren mit Übersetzung
     const selectedCountElement = document.getElementById('selected-count');
     if (selectedCountElement) {
-        selectedCountElement.textContent = `(${selectedCount} ${translations[currentLanguage].selected_count})`;
+        selectedCountElement.textContent = formatString(
+            translations[currentLanguage].selected_count_format,
+            { count: selectedCount }
+        );
     }
     
     // Download-Button aktivieren/deaktivieren
@@ -67,10 +72,13 @@ function updateSelectionInfo() {
         downloadSelectedBtn.disabled = selectedCount === 0;
     }
     
-    // Auswahl-Info aktualisieren
+    // Auswahl-Info aktualisieren mit Übersetzung
     const selectionInfo = document.getElementById('selection-info');
     if (selectionInfo) {
-        selectionInfo.textContent = `${selectedCount} ${translations[currentLanguage].of} ${totalCount} ${translations[currentLanguage].selected_count}`;
+        selectionInfo.textContent = formatString(
+            translations[currentLanguage].selection_info_format,
+            { selected: selectedCount, total: totalCount }
+        );
     }
     
     // Gesamtzahl aktualisieren
@@ -80,7 +88,10 @@ function updateSelectionInfo() {
 // Icon-Anzahl aktualisieren
 function updateIconCount() {
     const countElement = document.getElementById('download-count');
-    if (countElement) {
-        countElement.textContent = `(${iconDatabase.length} Icons)`;
+    if (countElement && typeof iconDatabase !== 'undefined') {
+        countElement.textContent = formatString(
+            translations[currentLanguage].icon_count_format,
+            { count: iconDatabase.length }
+        );
     }
 }

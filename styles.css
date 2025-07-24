@@ -288,14 +288,14 @@ body {
 }
 
 .download-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #172d4d;
     color: white;
     border: none;
     padding: 0.7rem 1.5rem;
     border-radius: 6px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     display: inline-block;
     transition: opacity 0.3s ease;
