@@ -260,7 +260,7 @@ let currentLanguage = 'de';
         // Einzelnes Icon herunterladen
         async function downloadIcon(filename) {
             try {
-                const response = await fetch(`assets/${filename}`);
+                const response = await fetch(`icons/${filename}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
