@@ -17,117 +17,128 @@
         <p data-translate="subtitle">Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.</p>
     </header>
 
-    <div class="container">
+        <div class="container">
         <div class="icon-grid">
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="star_title">Star Icon</h3>
-                <p class="icon-description" data-translate="star_desc">Perfekt für Bewertungen und Favoriten</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('star.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
-
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M20 6L9 17l-5-5"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="check_title">Check Icon</h3>
-                <p class="icon-description" data-translate="check_desc">Für Erfolg und Bestätigung</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('check.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
-
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="m21 21-4.35-4.35"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="search_title">Search Icon</h3>
-                <p class="icon-description" data-translate="search_desc">Für Suchfunktionen und Filter</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('search.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
-
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="message_title">Message Icon</h3>
-                <p class="icon-description" data-translate="message_desc">Für Chat und Kommunikation</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('message.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
-
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="bookmark_title">Bookmark Icon</h3>
-                <p class="icon-description" data-translate="bookmark_desc">Für Lesezeichen und Sammlungen</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('bookmark.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
-
-            <div class="icon-card">
-                <div class="icon-preview">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                    </svg>
-                </div>
-                <h3 class="icon-name" data-translate="heart_title">Heart Icon</h3>
-                <p class="icon-description" data-translate="heart_desc">Für Likes und Favoriten</p>
-                <a href="#" class="download-btn" onclick="downloadIcon('heart.svg')" data-translate="download_btn">Download SVG</a>
-            </div>
+            <!-- Icons werden dynamisch generiert -->
         </div>
+    
     </div>
 
-    <script>
-        // Übersetzungen
-        const translations = {
-            de: {
-                title: "AdLer Icon Repository",
-                subtitle: "Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.",
-                star_title: "Star Icon",
-                star_desc: "Perfekt für Bewertungen und Favoriten",
-                check_title: "Check Icon",
-                check_desc: "Für Erfolg und Bestätigung",
-                search_title: "Search Icon",
-                search_desc: "Für Suchfunktionen und Filter",
-                message_title: "Message Icon",
-                message_desc: "Für Chat und Kommunikation",
-                bookmark_title: "Bookmark Icon",
-                bookmark_desc: "Für Lesezeichen und Sammlungen",
-                heart_title: "Heart Icon",
-                heart_desc: "Für Likes und Favoriten",
-                download_btn: "Download SVG"
+        <script>
+        // Icon-Datenbank - nur Metadaten, SVG wird aus Datei geladen
+        const iconDatabase = [
+            {
+                id: 'star',
+                filename: 'star.svg',
+                translations: {
+                    de: { title: 'Stern Icon', desc: 'Perfekt für Bewertungen und Favoriten' },
+                    en: { title: 'Star Icon', desc: 'Perfect for ratings and favorites' }
+                }
             },
-            en: {
-                title: "AdLer Icon Repository",
-                subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print.",
-                star_title: "Star Icon",
-                star_desc: "Perfect for ratings and favorites",
-                check_title: "Check Icon",
-                check_desc: "For success and confirmation",
-                search_title: "Search Icon",
-                search_desc: "For search functions and filters",
-                message_title: "Message Icon",
-                message_desc: "For chat and communication",
-                bookmark_title: "Bookmark Icon",
-                bookmark_desc: "For bookmarks and collections",
-                heart_title: "Heart Icon",
-                heart_desc: "For likes and favorites",
-                download_btn: "Download SVG"
+            {
+                id: 'check',
+                filename: 'check.svg',
+                translations: {
+                    de: { title: 'Häkchen Icon', desc: 'Für Erfolg und Bestätigung' },
+                    en: { title: 'Check Icon', desc: 'For success and confirmation' }
+                }
+            },
+            {
+                id: 'search',
+                filename: 'search.svg',
+                translations: {
+                    de: { title: 'Suche Icon', desc: 'Für Suchfunktionen und Filter' },
+                    en: { title: 'Search Icon', desc: 'For search functions and filters' }
+                }
+            },
+            {
+                id: 'message',
+                filename: 'message.svg',
+                translations: {
+                    de: { title: 'Nachricht Icon', desc: 'Für Chat und Kommunikation' },
+                    en: { title: 'Message Icon', desc: 'For chat and communication' }
+                }
+            },
+            {
+                id: 'bookmark',
+                filename: 'bookmark.svg',
+                translations: {
+                    de: { title: 'Lesezeichen Icon', desc: 'Für Lesezeichen und Sammlungen' },
+                    en: { title: 'Bookmark Icon', desc: 'For bookmarks and collections' }
+                }
+            },
+            {
+                id: 'heart',
+                filename: 'heart.svg',
+                translations: {
+                    de: { title: 'Herz Icon', desc: 'Für Likes und Favoriten' },
+                    en: { title: 'Heart Icon', desc: 'For likes and favorites' }
+                }
             }
-        };
+        ];
 
         let currentLanguage = 'de';
+
+        // SVG aus Datei laden
+        async function loadSVG(filename) {
+            try {
+                const response = await fetch(`assets/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const svgText = await response.text();
+                return svgText;
+            } catch (error) {
+                console.warn(`Fehler beim Laden von ${filename}:`, error);
+                return `<circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="8">?</text>`;
+            }
+        }
+
+        // Icons dynamisch generieren (async)
+        async function generateIconGrid() {
+            const iconGrid = document.querySelector('.icon-grid');
+            iconGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 2rem;">Lade Icons...</div>';
+
+            const iconCards = await Promise.all(iconDatabase.map(async (icon) => {
+                const iconCard = document.createElement('div');
+                iconCard.className = 'icon-card';
+                
+                // SVG aus Datei laden
+                const svgContent = await loadSVG(icon.filename);
+                
+                iconCard.innerHTML = `
+                    <div class="icon-preview">
+                        ${svgContent}
+                    </div>
+                    <h3 class="icon-name">${icon.translations[currentLanguage].title}</h3>
+                    <p class="icon-description">${icon.translations[currentLanguage].desc}</p>
+                    <a href="#" class="download-btn" onclick="downloadIcon('${icon.filename}')">${currentLanguage === 'de' ? 'Download SVG' : 'Download SVG'}</a>
+                `;
+                
+                return iconCard;
+            }));
+
+            // Grid leeren und Icons hinzufügen
+            iconGrid.innerHTML = '';
+            iconCards.forEach(card => iconGrid.appendChild(card));
+        }
+
+        // Neues Icon zur Datenbank hinzufügen
+        function addNewIcon(iconData) {
+            iconDatabase.push(iconData);
+            generateIconGrid();
+        }
+
+        // Icons automatisch aus assets Ordner scannen (optional)
+        async function scanAssetsFolder() {
+            try {
+                // Diese Funktion würde alle SVG-Dateien im assets Ordner finden
+                // Für eine echte Implementierung bräuchtest du einen Server-Endpoint
+                console.log('Asset-Scan würde hier implementiert werden');
+            } catch (error) {
+                console.warn('Asset-Scan nicht verfügbar:', error);
+            }
+        }
 
         function switchLanguage(lang) {
             currentLanguage = lang;
@@ -139,31 +150,89 @@
             });
             document.getElementById(`lang-${lang}`).classList.add('active');
             
-            // Texte übersetzen
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang][key]) {
-                    element.textContent = translations[lang][key];
+            // Titel und Untertitel aktualisieren
+            const titleTexts = {
+                de: {
+                    title: "AdLer Icon Repository",
+                    subtitle: "Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print."
+                },
+                en: {
+                    title: "AdLer Icon Repository",
+                    subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print."
                 }
-            });
-
+            };
+            
+            document.querySelector('[data-translate="title"]').textContent = titleTexts[lang].title;
+            document.querySelector('[data-translate="subtitle"]').textContent = titleTexts[lang].subtitle;
+            
+            // Icons neu generieren mit neuer Sprache
+            generateIconGrid();
+            
             // Sprache in localStorage speichern
             localStorage.setItem('language', lang);
         }
 
-        function downloadIcon(filename) {
-            const downloadText = currentLanguage === 'de' ? 'Download für' : 'Download for';
-            const startText = currentLanguage === 'de' ? 'würde hier starten' : 'would start here';
-            alert(`${downloadText} ${filename} ${startText}`);
+        async function downloadIcon(filename) {
+            try {
+                const response = await fetch(`assets/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                a.click();
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Download-Fehler:', error);
+                alert('Fehler beim Download der Datei');
+            }
         }
 
-        // Gespeicherte Sprache laden
-        document.addEventListener('DOMContentLoaded', function() {
+        // Gespeicherte Sprache laden und Icons generieren
+        document.addEventListener('DOMContentLoaded', async function() {
             const savedLanguage = localStorage.getItem('language') || 'de';
+            currentLanguage = savedLanguage;
+            
             if (savedLanguage !== 'de') {
-                switchLanguage(savedLanguage);
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById(`lang-${savedLanguage}`).classList.add('active');
+                
+                // Titel sofort aktualisieren
+                const titleTexts = {
+                    en: {
+                        title: "AdLer Icon Repository",
+                        subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print."
+                    }
+                };
+                
+                if (titleTexts[savedLanguage]) {
+                    document.querySelector('[data-translate="title"]').textContent = titleTexts[savedLanguage].title;
+                    document.querySelector('[data-translate="subtitle"]').textContent = titleTexts[savedLanguage].subtitle;
+                }
             }
+            
+            await generateIconGrid();
         });
-    </script>
+
+        // Admin-Funktion zum einfachen Hinzufügen neuer Icons
+        window.addIcon = function(id, filename, deTitle, deDesc, enTitle, enDesc) {
+            const newIcon = {
+                id: id,
+                filename: filename,
+                translations: {
+                    de: { title: deTitle, desc: deDesc },
+                    en: { title: enTitle, desc: enDesc }
+                }
+            };
+            addNewIcon(newIcon);
+            console.log(`Icon "${id}" wurde hinzugefügt!`);
+        };
+        </script>
 </body>
 </html>
