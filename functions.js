@@ -1,0 +1,143 @@
+let currentLanguage = 'de';
+
+        // SVG als Data URL laden (komplett isoliert)
+        async function loadSVGAsDataURL(filename) {
+            try {
+                const response = await fetch(`assets/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const svgText = await response.text();
+                
+                // SVG als Data URL encodieren
+                const encoded = btoa(unescape(encodeURIComponent(svgText)));
+                return `data:image/svg+xml;base64,${encoded}`;
+            } catch (error) {
+                console.warn(`Fehler beim Laden von ${filename}:`, error);
+                return 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PC9zdmc+';
+            }
+        }
+
+        // Icons als IMG-Tags generieren
+        async function generateIconGrid() {
+            const iconGrid = document.querySelector('.icon-grid');
+            iconGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 2rem;">Lade Icons...</div>';
+
+            const iconCards = await Promise.all(iconDatabase.map(async (icon) => {
+                const iconCard = document.createElement('div');
+                iconCard.className = 'icon-card';
+                
+                // SVG als Data URL laden
+                const svgDataURL = await loadSVGAsDataURL(icon.filename);
+                
+                iconCard.innerHTML = `
+                    <div class="icon-preview">
+                        <img src="${svgDataURL}" alt="${icon.translations[currentLanguage].title}" />
+                    </div>
+                    <h3 class="icon-name">${icon.translations[currentLanguage].title}</h3>
+                    <p class="icon-description">${icon.translations[currentLanguage].desc}</p>
+                    <a href="#" class="download-btn" onclick="downloadIcon('${icon.filename}')">${currentLanguage === 'de' ? 'SVG herunterladen' : 'Download SVG'}</a>
+                `;
+                
+                return iconCard;
+            }));
+
+            // Grid leeren und Icons hinzufügen
+            iconGrid.innerHTML = '';
+            iconCards.forEach(card => iconGrid.appendChild(card));
+        }
+
+        function switchLanguage(lang) {
+            currentLanguage = lang;
+            document.documentElement.lang = lang;
+            
+            // Buttons aktualisieren
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`lang-${lang}`).classList.add('active');
+            
+            // Titel und Untertitel aktualisieren
+            const titleTexts = {
+                de: {
+                    title: "AdLer Icon Repository",
+                    subtitle: "Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print."
+                },
+                en: {
+                    title: "AdLer Icon Repository",
+                    subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print."
+                }
+            };
+            
+            document.querySelector('[data-translate="title"]').textContent = titleTexts[lang].title;
+            document.querySelector('[data-translate="subtitle"]').textContent = titleTexts[lang].subtitle;
+            
+            // Icons neu generieren mit neuer Sprache
+            generateIconGrid();
+            
+            // Sprache in localStorage speichern
+            localStorage.setItem('language', lang);
+        }
+
+        async function downloadIcon(filename) {
+            try {
+                const response = await fetch(`assets/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                a.click();
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Download-Fehler:', error);
+                alert('Fehler beim Download der Datei');
+            }
+        }
+
+        // Gespeicherte Sprache laden und Icons generieren
+        document.addEventListener('DOMContentLoaded', async function() {
+            const savedLanguage = localStorage.getItem('language') || 'de';
+            currentLanguage = savedLanguage;
+            
+            if (savedLanguage !== 'de') {
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.getElementById(`lang-${savedLanguage}`).classList.add('active');
+                
+                // Titel sofort aktualisieren
+                const titleTexts = {
+                    en: {
+                        title: "AdLer Icon Repository",
+                        subtitle: "High-quality SVG icons for your projects. Free to download and ready to use for web, mobile and print."
+                    }
+                };
+                
+                if (titleTexts[savedLanguage]) {
+                    document.querySelector('[data-translate="title"]').textContent = titleTexts[savedLanguage].title;
+                    document.querySelector('[data-translate="subtitle"]').textContent = titleTexts[savedLanguage].subtitle;
+                }
+            }
+            
+            await generateIconGrid();
+        });
+
+        // Admin-Funktion zum einfachen Hinzufügen neuer Icons
+        window.addIcon = function(id, filename, deTitle, deDesc, enTitle, enDesc) {
+            const newIcon = {
+                id: id,
+                filename: filename,
+                translations: {
+                    de: { title: deTitle, desc: deDesc },
+                    en: { title: enTitle, desc: enDesc }
+                }
+            };
+            iconDatabase.push(newIcon);
+            generateIconGrid();
+            console.log(`Icon "${id}" wurde hinzugefügt!`);
+        };
