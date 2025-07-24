@@ -20,6 +20,10 @@ body {
     align-items: center;
     text-align: center;
     padding: 2rem;
+    position: relative;
+}
+.subtitle, .subtitletext {
+    text-align: left;
 }
 
 .header h1 {
@@ -152,10 +156,6 @@ body {
     background: rgba(255, 255, 255, 0.9);
     color: #667eea;
     border-color: rgba(255, 255, 255, 0.9);
-}
-
-.header {
-    position: relative;
 }
 
 @media (max-width: 768px) {
