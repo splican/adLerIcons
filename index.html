@@ -25,12 +25,23 @@
     </header>
 
     <div class="container">
-        <!-- Download All Button -->
-        <div class="download-all-section">
+        <!-- Download Buttons -->
+        <div class="download-buttons-section">
             <button onclick="downloadAllIcons()" class="download-all-btn" id="download-all-btn">
                 <span data-translate="download_all">Alle Icons als ZIP herunterladen</span>
                 <span class="download-count" id="download-count">(89 Icons)</span>
             </button>
+            
+            <button onclick="downloadSelectedIcons()" class="download-selected-btn" id="download-selected-btn" disabled>
+                <span data-translate="download_selected">Ausgewählte Icons herunterladen</span>
+                <span class="selected-count" id="selected-count">(0 ausgewählt)</span>
+            </button>
+            
+            <div class="selection-controls">
+                <button onclick="selectAllIcons()" data-translate="select_all">Alle auswählen</button>
+                <button onclick="deselectAllIcons()" data-translate="deselect_all">Alle abwählen</button>
+                <span id="selection-info">0 von 89 ausgewählt</span>
+            </div>
         </div>
 
         <div class="icon-grid">
