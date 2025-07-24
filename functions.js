@@ -141,3 +141,147 @@ let currentLanguage = 'de';
             generateIconGrid();
             console.log(`Icon "${id}" wurde hinzugefügt!`);
         };
+
+        // Übersetzungen für den Download-Button
+        const translations = {
+            de: {
+                download_all: 'Alle Icons als ZIP herunterladen',
+                downloading: 'Lade Icons herunter...',
+                preparing: 'Bereite ZIP-Datei vor...',
+                complete: 'Download abgeschlossen!'
+            },
+            en: {
+                download_all: 'Download All Icons as ZIP',
+                downloading: 'Downloading icons...',
+                preparing: 'Preparing ZIP file...',
+                complete: 'Download complete!'
+            }
+        };
+
+        // Alle Icons als ZIP herunterladen
+        async function downloadAllIcons() {
+            const downloadBtn = document.getElementById('download-all-btn');
+            const originalText = downloadBtn.innerHTML;
+            
+            try {
+                // Button deaktivieren und Status anzeigen
+                downloadBtn.disabled = true;
+                downloadBtn.innerHTML = `<span>${translations[currentLanguage].downloading}</span>`;
+                
+                // Progress-Bar erstellen
+                const progressContainer = document.createElement('div');
+                progressContainer.className = 'download-progress';
+                progressContainer.innerHTML = '<div class="download-progress-bar"></div>';
+                progressContainer.style.display = 'block';
+                downloadBtn.parentNode.appendChild(progressContainer);
+                
+                const progressBar = progressContainer.querySelector('.download-progress-bar');
+                
+                // ZIP-Objekt erstellen
+                const zip = new JSZip();
+                const iconFolder = zip.folder('adler-icons');
+                
+                // Alle Icons laden
+                const totalIcons = iconDatabase.length;
+                let loadedIcons = 0;
+                
+                for (const icon of iconDatabase) {
+                    try {
+                        const response = await fetch(`assets/${icon.filename}`);
+                        if (response.ok) {
+                            const svgContent = await response.text();
+                            iconFolder.file(icon.filename, svgContent);
+                        }
+                        
+                        loadedIcons++;
+                        const progress = (loadedIcons / totalIcons) * 100;
+                        progressBar.style.width = progress + '%';
+                        
+                    } catch (error) {
+                        console.warn(`Fehler beim Laden von ${icon.filename}:`, error);
+                    }
+                }
+                
+                // README-Datei hinzufügen
+                const readmeContent = `# AdLer Icon Repository
+
+        Diese ZIP-Datei enthält ${totalIcons} SVG-Icons aus dem AdLer Projekt.
+
+        ## Lizenz
+        Alle Icons stehen unter der MIT-Lizenz und sind frei verwendbar.
+
+        ## Verwendung
+        Die SVG-Dateien können direkt in Web-, Mobile- und Print-Projekten verwendet werden.
+
+        ## Weitere Informationen
+        Besuchen Sie das AdLer Icon Repository für weitere Details und Updates.
+
+        Erstellt am: ${new Date().toLocaleDateString('de-DE')}
+        `;
+                
+                zip.file('README.txt', readmeContent);
+                
+                // Status aktualisieren
+                downloadBtn.innerHTML = `<span>${translations[currentLanguage].preparing}</span>`;
+                
+                // ZIP generieren und herunterladen
+                const zipBlob = await zip.generateAsync({
+                    type: 'blob',
+                    compression: 'DEFLATE',
+                    compressionOptions: { level: 6 }
+                });
+                
+                // Download starten
+                const url = URL.createObjectURL(zipBlob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'adler-icons.zip';
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                // Erfolg anzeigen
+                downloadBtn.innerHTML = `<span>${translations[currentLanguage].complete}</span>`;
+                
+                // Nach 2 Sekunden zurücksetzen
+                setTimeout(() => {
+                    downloadBtn.disabled = false;
+                    downloadBtn.innerHTML = originalText;
+                    progressContainer.remove();
+                }, 2000);
+                
+            } catch (error) {
+                console.error('Fehler beim ZIP-Download:', error);
+                downloadBtn.disabled = false;
+                downloadBtn.innerHTML = originalText;
+                alert('Fehler beim Erstellen der ZIP-Datei');
+            }
+        }
+
+        // Einzelnes Icon herunterladen
+        async function downloadIcon(filename) {
+            try {
+                const response = await fetch(`assets/${filename}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                a.click();
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Download-Fehler:', error);
+                alert('Fehler beim Download der Datei');
+            }
+        }
+
+        // Icon-Anzahl aktualisieren
+        function updateIconCount() {
+            const countElement = document.getElementById('download-count');
+            if (countElement) {
+                countElement.textContent = `(${iconDatabase.length} Icons)`;
+            }
+        }

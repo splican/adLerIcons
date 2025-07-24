@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdLer Icon Repository - SVG Icons zum Download</title>
+    <title>AdLer Icons</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- JSZip für ZIP-Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <!-- Icon Database laden -->
     <script src="icon-database.js"></script>
     <!-- Restliche Funktionen laden -->
@@ -23,6 +25,14 @@
     </header>
 
     <div class="container">
+        <!-- Download All Button -->
+        <div class="download-all-section">
+            <button onclick="downloadAllIcons()" class="download-all-btn" id="download-all-btn">
+                <span data-translate="download_all">Alle Icons als ZIP herunterladen</span>
+                <span class="download-count" id="download-count">(89 Icons)</span>
+            </button>
+        </div>
+
         <div class="icon-grid">
             <!-- Icons werden dynamisch generiert -->
         </div>
