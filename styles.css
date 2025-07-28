@@ -11,7 +11,7 @@ body {
 }
 
 .adlerlogo {
-    width: 150px;
+    width: 250px;
     height: auto;
     margin: 1rem auto;
     display: block;
@@ -19,8 +19,8 @@ body {
 
 .header {
     height: 20vh;
+    color: white;
     display: flex;
-    background: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -228,7 +228,6 @@ body {
     flex-wrap: wrap;
     margin: 2rem 0;
     padding: 1rem;
-    background: white;
     border-radius: 12px;
 }
 
@@ -268,11 +267,11 @@ body {
     gap: 0.5rem;
     align-items: center;
     font-size: 0.9rem;
-    color: #6c757d;
+    color: #172d4d;
 }
 
 .selection-controls button {
-    background: none;
+    background: #e6e6e6;
     border: 1px solid #dee2e6;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -366,13 +365,20 @@ body {
     .header-text {
         display: none;
     }
-}
+    .adlerlogo {
+        width: 150px;
+    }
 
 @media (max-width: 480px) {
     .icon-grid {
         grid-template-columns: 1fr;
     }
+    
     .header-text {
     display: none;
+    }
+    
+    .adlerlogo {
+        width: 120px;
     }
 }

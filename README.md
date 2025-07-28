@@ -6,7 +6,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ## 🌐 Live Demo
 
-**➡️ [AdLer Icons Website](https://splican.github.io/AdLerIconRepo/)**
+**➡️ [AdLer Icons Website](https://splican.github.io/adLerIcons)**
 
 ## ✨ Features
 
