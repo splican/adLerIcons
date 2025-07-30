@@ -19,7 +19,7 @@ body {
 
 .header {
     height: 20vh;
-    color: white;
+    color: #172d4d;
     display: flex;
     flex-direction: column;
     justify-content: center;
