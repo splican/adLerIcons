@@ -1,5 +1,3 @@
-# filepath: d:\01_CODE\AdLerIconRepo\README.md
-
 # 🦅 AdLer Icon Repository
 
 Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.
@@ -11,7 +9,6 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 ## ✨ Features
 
 - 🎨 **89+ hochwertige SVG-Icons**
-- 🌍 **Mehrsprachig** - Deutsch & Englisch
 - 📱 **Responsive Design** - Mobile & Desktop
 - ⚡ **Schnelle Downloads** - Einzeln oder als ZIP
 - 🔄 **Icon-Auswahl** - Wähle nur die Icons, die du brauchst
@@ -19,7 +16,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ## 🚀 Verwendung
 
-1. **Besuche die Website**: [AdLer Icons](https://yourusername.github.io/AdLerIconRepo/)
+1. **Besuche die Website**: [AdLer Icons](https://splican.github.io/adLerIcons/)
 2. **Icons durchsuchen**: Alle verfügbaren Icons werden automatisch geladen
 3. **Auswählen**: Klicke die Checkboxen der gewünschten Icons an
 4. **Herunterladen**:
@@ -31,21 +28,22 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ```
 AdLerIconRepo/
-├── index.html                 # Hauptseite
-├── styles.css                # Styling
-├── icons/                    # SVG-Icon-Dateien
-├── website-assets/           # Logo und Assets
+├── index.html               # Hauptseite
+├── styles.css               # Styling
+├── icons/                   # SVG-Icon-Dateien
+├── website-assets/          # Logo und Assets
 ├── core-data/               # Daten und Übersetzungen
 │   ├── translations.js      # Mehrsprachigkeit
 │   └── icon-database.js     # Icon-Metadaten
 ├── functionality-modules/   # JavaScript-Module
 │   ├── svg-handler.js       # SVG-Verarbeitung
 │   ├── selection-manager.js # Auswahl-Logik
-│   ├── icon-grid.js        # Grid-Darstellung
+│   ├── icon-grid.js         # Grid-Darstellung
 │   ├── download-manager.js  # Download-Funktionen
 │   ├── language-manager.js  # Sprachenwechsel
-│   └── app-init.js         # Initialisierung
-└── tests/                  # Playwright-Tests
+│   └── app-init.js          # Initialisierung
+│   └── sticky-download.js   # Initialisierung
+└── tests/                   # Playwright-Tests
     ├── user-interactions.spec.js
     └── performance.spec.js
 ```
