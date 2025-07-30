@@ -27,8 +27,8 @@
                 id: 'all-data',
                 filename: 'all-data.svg',
                 translations: {
-                    de: { title: 'Alle Daten', desc: 'Icon für vollständige Datenansichten' },
-                    en: { title: 'All Data', desc: 'Icon for complete data views' }
+                    de: { title: 'Alle Daten', desc: 'Icon für das Anzeigen aller hochgeladenen Daten' },
+                    en: { title: 'All Data', desc: 'Icon for display of all uploaded data' }
                 }
             },
             {
@@ -83,8 +83,8 @@
                 id: 'bug',
                 filename: 'bug.svg',
                 translations: {
-                    de: { title: 'Bug', desc: 'Icon für Fehler und Probleme' },
-                    en: { title: 'Bug', desc: 'Icon for errors and problems' }
+                    de: { title: 'Bug', desc: 'Icon für Fehler und Probleme einer Anwendung' },
+                    en: { title: 'Bug', desc: 'Icon for errors and problems in an application' }
                 }
             },
             {
@@ -99,8 +99,8 @@
                 id: 'check-solution',
                 filename: 'check-solution.svg',
                 translations: {
-                    de: { title: 'Lösung prüfen', desc: 'Icon für das Überprüfen von Lösungen und Antworten' },
-                    en: { title: 'Check Solution', desc: 'Icon for checking solutions and answers' }
+                    de: { title: 'Lösung mit Haken', desc: 'Icon für korrekte Lösungen' },
+                    en: { title: 'Solution with checkmark', desc: 'Icon for correct solutions' }
                 }
             },
             {
@@ -160,19 +160,19 @@
                 }
             },
             {
-                id: 'difficulty-polygon-hard',
-                filename: 'difficulty-polygon-hard.svg',
-                translations: {
-                    de: { title: 'Schwierigkeit Schwer', desc: 'Polygon-Icon für schwere Schwierigkeitsstufe' },
-                    en: { title: 'Difficulty Hard', desc: 'Polygon icon for hard difficulty level' }
-                }
-            },
-            {
                 id: 'difficulty-polygon-medium',
                 filename: 'difficulty-polygon-medium.svg',
                 translations: {
                     de: { title: 'Schwierigkeit Mittel', desc: 'Polygon-Icon für mittlere Schwierigkeitsstufe' },
                     en: { title: 'Difficulty Medium', desc: 'Polygon icon for medium difficulty level' }
+                }
+            },
+            {
+                id: 'difficulty-polygon-hard',
+                filename: 'difficulty-polygon-hard.svg',
+                translations: {
+                    de: { title: 'Schwierigkeit Schwer', desc: 'Polygon-Icon für schwere Schwierigkeitsstufe' },
+                    en: { title: 'Difficulty Hard', desc: 'Polygon icon for hard difficulty level' }
                 }
             },
             {
@@ -195,8 +195,8 @@
                 id: 'download-file-moodle',
                 filename: 'download-file-moodle.svg',
                 translations: {
-                    de: { title: 'Moodle Datei Download', desc: 'Icon für das Herunterladen von Moodle-Dateien' },
-                    en: { title: 'Moodle File Download', desc: 'Icon for downloading Moodle files' }
+                    de: { title: 'Moodle Datei Download', desc: 'Icon für das Herunterladen von Moodle-Backup-Dateien' },
+                    en: { title: 'Moodle File Download', desc: 'Icon for downloading Moodle backup files' }
                 }
             },
             {
@@ -211,8 +211,8 @@
                 id: 'element-filteroption_type',
                 filename: 'element-filteroption_type.svg',
                 translations: {
-                    de: { title: 'Filter Elementtyp', desc: 'Icon für Filteroption nach Elementtyp' },
-                    en: { title: 'Filter Element Type', desc: 'Icon for filter option by element type' }
+                    de: { title: 'Filter Elementtyp Lernelement', desc: 'Icon für Filteroption nach Lernelementtyp' },
+                    en: { title: 'Filter Element Type', desc: 'Icon for filter option by learning element type' }
                 }
             },
             {
@@ -235,8 +235,8 @@
                 id: 'feedback-without-typo',
                 filename: 'feedback-without-typo.svg',
                 translations: {
-                    de: { title: 'Feedback ohne Tippfehler', desc: 'Korrigierte Version des Feedback-Icons' },
-                    en: { title: 'Feedback without Typo', desc: 'Corrected version of the feedback icon' }
+                    de: { title: 'Feedback ohne Text', desc: 'Feedback-Icon ohne Text' },
+                    en: { title: 'Feedback without Typo', desc: 'Feedback icon without text' }
                 }
             },
             {
@@ -363,8 +363,8 @@
                 id: 'level',
                 filename: 'level.svg',
                 translations: {
-                    de: { title: 'Level', desc: 'Icon für Spiellevel oder Schwierigkeitsstufen' },
-                    en: { title: 'Level', desc: 'Icon for game levels or difficulty levels' }
+                    de: { title: 'Level', desc: 'Icon für Spielendenlevel' },
+                    en: { title: 'Level', desc: 'Icon for player levels' }
                 }
             },
             {
@@ -459,8 +459,8 @@
                 id: 'required-adaptivity',
                 filename: 'required-adaptivity.svg',
                 translations: {
-                    de: { title: 'Erforderliche Adaptivität', desc: 'Icon für erforderliche adaptive Elemente' },
-                    en: { title: 'Required Adaptivity', desc: 'Icon for required adaptive elements' }
+                    de: { title: 'Erforderlich', desc: 'Icon für erforderliche Inhalte' },
+                    en: { title: 'Required', desc: 'Icon for required content' }
                 }
             },
             {
@@ -475,8 +475,8 @@
                 id: 'rubicscube-check-solution',
                 filename: 'rubicscube-check-solution.svg',
                 translations: {
-                    de: { title: 'Rubikswürfel Lösung prüfen', desc: 'Icon für das Überprüfen von Rubikswürfel-Lösungen' },
-                    en: { title: 'Rubiks Cube Check Solution', desc: 'Icon for checking Rubiks cube solutions' }
+                    de: { title: 'Zauberwürfel Icon mit Haken', desc: 'Icon für korrekte Lösungen' },
+                    en: { title: 'Rubiks Cube Icon with checkmark', desc: 'Icon for correct solutions' }
                 }
             },
             {
@@ -507,8 +507,8 @@
                 id: 'spacemenu',
                 filename: 'spacemenu.svg',
                 translations: {
-                    de: { title: 'Raummenü', desc: 'Icon für das Raumnavigationsmenü' },
-                    en: { title: 'Space Menu', desc: 'Icon for the space navigation menu' }
+                    de: { title: 'Raummenü', desc: 'Icon für das Raummenü' },
+                    en: { title: 'Space Menu', desc: 'Icon for the space menu' }
                 }
             },
             {
@@ -547,56 +547,56 @@
                 id: 'story-npc',
                 filename: 'story-npc.svg',
                 translations: {
-                    de: { title: 'Story NPC', desc: 'Icon für Nicht-Spieler-Charaktere in Geschichten' },
-                    en: { title: 'Story NPC', desc: 'Icon for non-player characters in stories' }
+                    de: { title: 'Story NPC', desc: 'Icon für Nicht-Spieler-Charaktere die Stories erzählen' },
+                    en: { title: 'Story NPC', desc: 'Icon for non-player characters that tell stories' }
                 }
             },
             {
                 id: 'task-easy-check',
                 filename: 'task-easy-check.svg',
                 translations: {
-                    de: { title: 'Einfache Aufgabe mit Prüfung', desc: 'Icon für einfache Aufgaben mit Lösungsprüfung' },
-                    en: { title: 'Easy Task with Check', desc: 'Icon for easy tasks with solution check' }
+                    de: { title: 'Einfache Aufgabe mit Haken', desc: 'Icon für einfache Aufgaben mit Haken' },
+                    en: { title: 'Easy Task with Check', desc: 'Icon for easy tasks with checkmark' }
                 }
             },
             {
                 id: 'task-easy-nocheck',
                 filename: 'task-easy-nocheck.svg',
                 translations: {
-                    de: { title: 'Einfache Aufgabe ohne Prüfung', desc: 'Icon für einfache Aufgaben ohne Lösungsprüfung' },
-                    en: { title: 'Easy Task without Check', desc: 'Icon for easy tasks without solution check' }
+                    de: { title: 'Einfache Aufgabe ohne Haken', desc: 'Icon für einfache Aufgaben ohne Haken' },
+                    en: { title: 'Easy Task without Check', desc: 'Icon for easy tasks without checkmark' }
                 }
             },
             {
                 id: 'task-hard-check',
                 filename: 'task-hard-check.svg',
                 translations: {
-                    de: { title: 'Schwere Aufgabe mit Prüfung', desc: 'Icon für schwere Aufgaben mit Lösungsprüfung' },
-                    en: { title: 'Hard Task with Check', desc: 'Icon for hard tasks with solution check' }
+                    de: { title: 'Schwere Aufgabe mit Haken', desc: 'Icon für schwere Aufgaben mit Haken' },
+                    en: { title: 'Hard Task with Check', desc: 'Icon for hard tasks with checkmark' }
                 }
             },
             {
                 id: 'task-hard-nocheck',
                 filename: 'task-hard-nocheck.svg',
                 translations: {
-                    de: { title: 'Schwere Aufgabe ohne Prüfung', desc: 'Icon für schwere Aufgaben ohne Lösungsprüfung' },
-                    en: { title: 'Hard Task without Check', desc: 'Icon for hard tasks without solution check' }
+                    de: { title: 'Schwere Aufgabe ohne Haken', desc: 'Icon für schwere Aufgaben ohne Haken' },
+                    en: { title: 'Hard Task without Check', desc: 'Icon for hard tasks without checkmark' }
                 }
             },
             {
                 id: 'task-middle-check',
                 filename: 'task-middle-check.svg',
                 translations: {
-                    de: { title: 'Mittlere Aufgabe mit Prüfung', desc: 'Icon für mittlere Aufgaben mit Lösungsprüfung' },
-                    en: { title: 'Middle Task with Check', desc: 'Icon for middle tasks with solution check' }
+                    de: { title: 'Mittlere Aufgabe mit Haken', desc: 'Icon für mittlere Aufgaben mit Haken' },
+                    en: { title: 'Middle Task with Check', desc: 'Icon for middle tasks with checkmark' }
                 }
             },
             {
                 id: 'task-middle-nocheck',
                 filename: 'task-middle-nocheck.svg',
                 translations: {
-                    de: { title: 'Mittlere Aufgabe ohne Prüfung', desc: 'Icon für mittlere Aufgaben ohne Lösungsprüfung' },
-                    en: { title: 'Middle Task without Check', desc: 'Icon for middle tasks without solution check' }
+                    de: { title: 'Mittlere Aufgabe ohne Haken', desc: 'Icon für mittlere Aufgaben ohne Haken' },
+                    en: { title: 'Middle Task without Check', desc: 'Icon for middle tasks without checkmark' }
                 }
             },
             {
@@ -651,8 +651,8 @@
                 id: 'window',
                 filename: 'window.svg',
                 translations: {
-                    de: { title: 'Fenster', desc: 'Icon für Fenster und Dialoge' },
-                    en: { title: 'Window', desc: 'Icon for windows and dialogs' }
+                    de: { title: 'Fenster', desc: 'Icon für Fenster in der 3D-Umgebung' },
+                    en: { title: 'Window', desc: 'Icon for windows in the 3D learning space' }
                 }
             },
             {
