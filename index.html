@@ -28,6 +28,7 @@
     <script src="functionality-modules/icon-grid.js"></script>
     <script src="functionality-modules/download-manager.js"></script>
     <script src="functionality-modules/language-manager.js"></script>
+    <script src="functionality-modules/sticky-download.js"></script>
     <script src="functionality-modules/app-init.js"></script>
     
      <!-- Performance Optimizations -->
@@ -40,6 +41,23 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
+    <!-- Sticky Download Button (wird dynamisch angezeigt) -->
+    <div class="sticky-download-container" id="sticky-download-container">
+        <div class="sticky-download-content">
+            <div class="sticky-selection-info">
+                <span class="sticky-selection-count" id="sticky-selection-count">0</span>
+                <span data-translate="icons_selected">Icons ausgewählt</span>
+            </div>
+            <button 
+                class="sticky-download-btn" 
+                id="sticky-download-btn"
+                onclick="downloadSelectedIcons()"
+                disabled>
+                <span data-translate="download_selected">Ausgewählte herunterladen</span>
+            </button>
+        </div>
+    </div>
+
     <header class="header">
         <div class="language-switcher">
             <button onclick="switchLanguage('de')" class="lang-btn active" id="lang-de">DE</button>

@@ -17,7 +17,10 @@ const translations = {
         icon_count_format: "({count} Icons)",
         selected_count_format: "({count} ausgewählt)",
         selection_info_format: "{selected} von {total} ausgewählt",
-        download_svg: "SVG herunterladen"
+        download_svg: "SVG herunterladen",
+        icons_selected: 'Icons ausgewählt',
+        download_selected_sticky: 'Ausgewählte herunterladen',
+        scroll_to_top: 'Nach oben scrollen'
     },
     en: {
         download_all: 'Download All Icons as ZIP',
@@ -37,6 +40,9 @@ const translations = {
         icon_count_format: "({count} Icons)",
         selected_count_format: "({count} selected)",
         selection_info_format: "{selected} of {total} selected",
-        download_svg: "Download SVG"
+        download_svg: "Download SVG",
+        icons_selected: 'Icons selected',
+        download_selected_sticky: 'Download Selected',
+        scroll_to_top: 'Scroll to top'
     }
 };

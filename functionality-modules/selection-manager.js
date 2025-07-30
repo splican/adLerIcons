@@ -52,12 +52,12 @@ function deselectAllIcons() {
     updateSelectionInfo();
 }
 
-// Auswahl-Informationen aktualisieren
+// Auswahl-Informationen aktualisieren - ERWEITERT für Sticky Button
 function updateSelectionInfo() {
     const selectedCount = selectedIcons.size;
     const totalCount = typeof iconDatabase !== 'undefined' ? iconDatabase.length : 0;
     
-    // Ausgewählte Anzahl aktualisieren mit Übersetzung
+    // Bestehende Updates...
     const selectedCountElement = document.getElementById('selected-count');
     if (selectedCountElement) {
         selectedCountElement.textContent = formatString(
@@ -66,13 +66,11 @@ function updateSelectionInfo() {
         );
     }
     
-    // Download-Button aktivieren/deaktivieren
     const downloadSelectedBtn = document.getElementById('download-selected-btn');
     if (downloadSelectedBtn) {
         downloadSelectedBtn.disabled = selectedCount === 0;
     }
     
-    // Auswahl-Info aktualisieren mit Übersetzung
     const selectionInfo = document.getElementById('selection-info');
     if (selectionInfo) {
         selectionInfo.textContent = formatString(
@@ -81,7 +79,11 @@ function updateSelectionInfo() {
         );
     }
     
-    // Gesamtzahl aktualisieren
+    // UPDATE STICKY BUTTON
+    if (typeof stickyDownloadManager !== 'undefined' && stickyDownloadManager) {
+        stickyDownloadManager.update();
+    }
+    
     updateIconCount();
 }
 
