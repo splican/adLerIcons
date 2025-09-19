@@ -2,6 +2,9 @@
 node_modules/
 npm-debug.log*
 
+# GitHub workflows and configurations
+.github/
+
 # Test results
 test-results/
 playwright-report/
